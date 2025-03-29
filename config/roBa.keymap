@@ -9,7 +9,7 @@
 
 &mt {
     flavor = "hold-preferred";
-    quick-tap-ms = <20>;
+    quick-tap-ms = <30>;
     tapping-term-ms = <150>;
     hold-while-undecided-linger;
 };
@@ -45,6 +45,20 @@
             bindings = <&kp K &kp A &kp S &kp A &kp I &kp M &kp S &kp N2 &kp N1 &kp LEFT_BRACKET &kp G &kp M &kp A &kp I &kp L &kp PERIOD &kp C &kp O &kp M>;
             label = "MAIL";
         };
+
+        leftclick: leftclick {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sl 4 &mkp MB1>;
+            label = "LEFTCLICK";
+        };
+
+        rightclick: rightclick {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sl 4 &mkp MB2>;
+            label = "RIGHTCLICK";
+        };
     };
 
     behaviors {
@@ -64,8 +78,8 @@
         default_layer {
             bindings = <
 &kp Q             &kp W         &kp E          &kp R        &kp T                                               &kp Y           &kp U        &kp I        &kp O         &kp P
-&kp A             &lt 4 S       &mt LSHFT D    &mt LCTRL F  &mt LEFT_ALT G  &kp PAGE_UP        &mkp MB1         &mt LEFT_ALT H  &mt LCTRL J  &mt LSHFT K  &lt 5 L       &kp MINUS
-&lt 3 Z           &kp X         &kp C          &kp V        &mt LEFT_WIN B  &kp PAGE_DOWN      &mkp MB2         &mt LEFT_WIN N  &kp M        &kp COMMA    &lt 2 PERIOD  &lt 3 SLASH
+&kp A             &lt 4 S       &mt LSHFT D    &mt LCTRL F  &mt LEFT_ALT G  &kp PAGE_UP        &leftclick       &mt LEFT_ALT H  &mt LCTRL J  &mt LSHFT K  &lt 5 L       &kp MINUS
+&lt 3 Z           &kp X         &kp C          &kp V        &mt LEFT_WIN B  &kp PAGE_DOWN      &rightclick      &mt LEFT_WIN N  &kp M        &kp COMMA    &lt 2 PERIOD  &lt 3 SLASH
 &kp LEFT_CONTROL  &lt 6 LSHIFT  &kp BACKSPACE  &lt 4 ENTER  &lt 1 SPACE     &lt 2 TAB          &lt 1 BACKSPACE  &mo 4                                                   &kp ENTER
             >;
 
@@ -85,7 +99,7 @@
             bindings = <
 &kp C_MUTE           &kp C_VOLUME_DOWN  &kp C_VOL_UP         &kp LG(LC(V))              &none                                       &kp CARET              &kp SEMICOLON        &kp COLON      &kp AT_SIGN       &kp LEFT_BRACKET
 &kp N1               &kp NUMBER_2       &mt LSHIFT NUMBER_3  &mt LEFT_CONTROL NUMBER_4  &mt LEFT_ALT N5  &trans      &trans         &mt LEFT_ALT NUMBER_6  &mt LEFT_CONTROL N7  &mt LSHIFT N8  &kp N9            &kp N0
-&kp LA(PRINTSCREEN)  &kp LG(LS(S))      &none                &mkp LCLK                  &mkp RCLK        &trans      &trans         &kp LS(LC(F10))        &mkp LCLK            &kp INT_YEN    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp LA(PRINTSCREEN)  &kp LG(LS(S))      &none                &leftclick                 &rightclick      &trans      &trans         &kp LS(LC(F10))        &mkp LCLK            &kp INT_YEN    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &passward1           &password2         &mail                &trans                     &trans           &trans      &kp LA(GRAVE)  &none                                                                        &kp LA(LSHIFT)
             >;
         };
