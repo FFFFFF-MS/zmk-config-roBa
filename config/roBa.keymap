@@ -12,6 +12,12 @@
     quick-tap-ms = <30>;
     tapping-term-ms = <200>;
     hold-while-undecided-linger;
+    require-prior-idle-ms = <30>;
+};
+
+&lt {
+    quick-tap-ms = <30>;
+    flavor = "balanced";
 };
 
 / {
