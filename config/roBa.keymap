@@ -9,16 +9,16 @@
 
 &mt {
     flavor = "tap-preferred";
-    quick-tap-ms = <100>;
-    tapping-term-ms = <200>;
+    quick-tap-ms = <150>;
+    tapping-term-ms = <300>;
     hold-while-undecided-linger;
-    require-prior-idle-ms = <70>;
+    require-prior-idle-ms = <100>;
 };
 
 &lt {
-    quick-tap-ms = <100>;
+    quick-tap-ms = <150>;
     flavor = "hold-preferred";
-    tapping-term-ms = <120>;
+    tapping-term-ms = <200>;
 };
 
 / {
@@ -95,10 +95,10 @@
 
         NUM {
             bindings = <
-&kp ESC    &kp LS(NUMBER_2)  &kp F2             &kp PERCENT       &kp LS(NUMBER_6)                                 &kp SINGLE_QUOTE  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_ASTERISK
-&kp EXCL   &kp LEFT_BRACKET  &mt LSHIFT LS(N7)  &kp LEFT_CONTROL  &kp LEFT_ALT      &kp LS(N8)      &kp LS(N8)     &kp LS(MINUS)     &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS
-&kp LC(Z)  &kp LC(X)         &kp LC(C)          &kp LC(V)         &none             &kp LS(N9)      &kp LS(N9)     &kp KP_N0         &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_PLUS
-&trans     &trans            &trans             &trans            &trans            &trans          &kp LA(GRAVE)  &none                                              &none
+&kp ESC    &kp LS(NUMBER_2)  &kp F2             &kp PERCENT       &kp LS(NUMBER_6)                                 &kp SINGLE_QUOTE  &kp N7  &kp N8  &kp N9  &kp KP_ASTERISK
+&kp EXCL   &kp LEFT_BRACKET  &mt LSHIFT LS(N7)  &kp LEFT_CONTROL  &kp LEFT_ALT      &kp LS(N8)      &kp LS(N8)     &kp LS(MINUS)     &kp N4  &kp N5  &kp N6  &kp KP_MINUS
+&kp LC(Z)  &kp LC(X)         &kp LC(C)          &kp LC(V)         &none             &kp LS(N9)      &kp LS(N9)     &kp N0            &kp N1  &kp N2  &kp N3  &kp KP_PLUS
+&trans     &trans            &trans             &trans            &trans            &trans          &kp LA(GRAVE)  &none                                     &none
             >;
         };
 
