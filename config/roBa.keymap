@@ -8,9 +8,9 @@
 #define NUM 6
 
 &mt {
-    flavor = "balanced";
+    flavor = "tap-preferred";
     quick-tap-ms = <30>;
-    tapping-term-ms = <300>;
+    tapping-term-ms = <200>;
     hold-while-undecided-linger;
 };
 
@@ -88,10 +88,10 @@
 
         NUM {
             bindings = <
-&kp ESC    &kp LS(NUMBER_2)  &kp F2             &kp PERCENT       &kp LS(NUMBER_6)                                 &kp SINGLE_QUOTE  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_ASTERISK
-&kp EXCL   &kp LEFT_BRACKET  &mt LSHIFT LS(N7)  &kp LEFT_CONTROL  &kp LEFT_ALT      &kp LS(N8)      &kp LS(N8)     &kp LS(MINUS)     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS
-&kp LC(Z)  &kp LC(X)         &kp LC(C)          &kp LC(V)         &none             &kp LS(N9)      &kp LS(N9)     &kp KP_NUMBER_0   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_PLUS
-&trans     &trans            &trans             &trans            &trans            &trans          &kp BACKSPACE  &none                                                                &none
+&kp ESC    &kp LS(NUMBER_2)  &kp F2             &kp PERCENT       &kp LS(NUMBER_6)                                 &kp SINGLE_QUOTE  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_ASTERISK
+&kp EXCL   &kp LEFT_BRACKET  &mt LSHIFT LS(N7)  &kp LEFT_CONTROL  &kp LEFT_ALT      &kp LS(N8)      &kp LS(N8)     &kp LS(MINUS)     &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS
+&kp LC(Z)  &kp LC(X)         &kp LC(C)          &kp LC(V)         &none             &kp LS(N9)      &kp LS(N9)     &kp KP_N0         &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_PLUS
+&trans     &trans            &trans             &trans            &trans            &trans          &kp BACKSPACE  &none                                              &none
             >;
         };
 
