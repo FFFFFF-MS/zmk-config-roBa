@@ -9,14 +9,14 @@
 
 &mt {
     flavor = "tap-preferred";
-    quick-tap-ms = <30>;
+    quick-tap-ms = <60>;
     tapping-term-ms = <200>;
     hold-while-undecided-linger;
-    require-prior-idle-ms = <30>;
+    require-prior-idle-ms = <50>;
 };
 
 &lt {
-    quick-tap-ms = <30>;
+    quick-tap-ms = <60>;
     flavor = "hold-preferred";
     tapping-term-ms = <150>;
 };
