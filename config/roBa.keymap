@@ -8,9 +8,9 @@
 #define NUM 6
 
 &mt {
-    flavor = "hold-preferred";
+    flavor = "balanced";
     quick-tap-ms = <30>;
-    tapping-term-ms = <150>;
+    tapping-term-ms = <300>;
     hold-while-undecided-linger;
 };
 
@@ -99,7 +99,7 @@
             bindings = <
 &kp C_MUTE           &kp C_VOLUME_DOWN  &kp C_VOL_UP         &kp LG(LC(V))              &none                                       &kp CARET              &kp SEMICOLON        &kp COLON      &kp AT_SIGN       &kp LEFT_BRACKET
 &kp N1               &kp NUMBER_2       &mt LSHIFT NUMBER_3  &mt LEFT_CONTROL NUMBER_4  &mt LEFT_ALT N5  &trans      &trans         &mt LEFT_ALT NUMBER_6  &mt LEFT_CONTROL N7  &mt LSHIFT N8  &kp N9            &kp N0
-&kp LA(PRINTSCREEN)  &kp LG(LS(S))      &none                &leftclick                 &rightclick      &trans      &trans         &kp LS(LC(F10))        &mkp LCLK            &kp INT_YEN    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp LA(PRINTSCREEN)  &kp LG(LS(S))      &none                &leftclick                 &rightclick      &trans      &trans         &kp LS(LC(F10))        &leftclick           &kp INT_YEN    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &passward1           &password2         &mail                &trans                     &trans           &trans      &kp LA(GRAVE)  &none                                                                        &kp LA(LSHIFT)
             >;
         };
