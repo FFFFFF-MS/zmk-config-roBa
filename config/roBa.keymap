@@ -18,7 +18,7 @@
 &lt {
     quick-tap-ms = <60>;
     flavor = "hold-preferred";
-    tapping-term-ms = <150>;
+    tapping-term-ms = <120>;
 };
 
 / {
@@ -98,7 +98,7 @@
 &kp ESC    &kp LS(NUMBER_2)  &kp F2             &kp PERCENT       &kp LS(NUMBER_6)                                 &kp SINGLE_QUOTE  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_ASTERISK
 &kp EXCL   &kp LEFT_BRACKET  &mt LSHIFT LS(N7)  &kp LEFT_CONTROL  &kp LEFT_ALT      &kp LS(N8)      &kp LS(N8)     &kp LS(MINUS)     &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS
 &kp LC(Z)  &kp LC(X)         &kp LC(C)          &kp LC(V)         &none             &kp LS(N9)      &kp LS(N9)     &kp KP_N0         &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_PLUS
-&trans     &trans            &trans             &trans            &trans            &trans          &kp BACKSPACE  &none                                              &none
+&trans     &trans            &trans             &trans            &trans            &trans          &kp LA(GRAVE)  &none                                              &none
             >;
         };
 
@@ -107,7 +107,7 @@
 &kp C_MUTE           &kp C_VOLUME_DOWN  &kp C_VOL_UP         &kp LG(LC(V))              &none                                       &kp CARET              &kp SEMICOLON        &kp COLON      &kp AT_SIGN       &kp LEFT_BRACKET
 &kp N1               &kp NUMBER_2       &mt LSHIFT NUMBER_3  &mt LEFT_CONTROL NUMBER_4  &mt LEFT_ALT N5  &trans      &trans         &mt LEFT_ALT NUMBER_6  &mt LEFT_CONTROL N7  &mt LSHIFT N8  &kp N9            &kp N0
 &kp LA(PRINTSCREEN)  &kp LG(LS(S))      &none                &leftclick                 &rightclick      &trans      &trans         &kp LS(LC(F10))        &leftclick           &kp INT_YEN    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&passward1           &password2         &mail                &trans                     &trans           &trans      &kp LA(GRAVE)  &none                                                                        &kp LA(LSHIFT)
+&passward1           &password2         &mail                &trans                     &trans           &trans      &kp BACKSPACE  &none                                                                        &kp LA(LSHIFT)
             >;
         };
 
@@ -124,7 +124,7 @@
             bindings = <
 &kp LC(LA(DEL))  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none             &none                                        &kp HOME       &kp END   &kp PAGE_UP      &kp UP_ARROW       &kp PAGE_DOWN
 &none            &none                 &kp LSHIFT            &kp LEFT_CONTROL  &kp LEFT_ALT  &trans                 &trans  &kp LA(LEFT)   &mkp MB1  &kp LEFT         &kp DOWN_ARROW     &kp RIGHT
-&none            &none                 &none                 &none             &kp LWIN      &trans                 &trans  &kp LA(RIGHT)  &mkp MB2  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp LG(LS(RIGHT))
+&none            &none                 &none                 &mkp MB1          &kp LWIN      &trans                 &trans  &kp LA(RIGHT)  &mkp MB2  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp LG(LS(RIGHT))
 &trans           &trans                &trans                &kp LA(PAGE_UP)   &kp SPACE     &kp LA(PAGE_DOWN)      &trans  &trans                                                       &kp ESCAPE
             >;
 
