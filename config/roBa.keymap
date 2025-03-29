@@ -11,6 +11,7 @@
     flavor = "hold-preferred";
     quick-tap-ms = <20>;
     tapping-term-ms = <150>;
+    hold-while-undecided-linger;
 };
 
 / {
