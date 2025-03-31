@@ -105,7 +105,7 @@
 &kp ESC    &kp LS(NUMBER_2)  &kp F2             &kp PERCENT       &kp LS(NUMBER_6)                                 &kp SINGLE_QUOTE  &kp N7  &kp N8  &kp N9  &kp KP_ASTERISK
 &kp EXCL   &kp LEFT_BRACKET  &mt LSHIFT LS(N7)  &kp LEFT_CONTROL  &kp LEFT_ALT      &kp LS(N8)      &kp LS(N8)     &kp LS(MINUS)     &kp N4  &kp N5  &kp N6  &kp KP_MINUS
 &kp LC(Z)  &kp LC(X)         &kp LC(C)          &kp LC(V)         &none             &kp LS(N9)      &kp LS(N9)     &kp N0            &kp N1  &kp N2  &kp N3  &kp KP_PLUS
-&trans     &trans            &trans             &trans            &trans            &trans          &kp BACKSPACE  &kp LA(GRAVE)                             &none
+&none      &none             &none              &trans            &trans            &trans          &kp BACKSPACE  &kp LA(GRAVE)                             &none
             >;
         };
 
