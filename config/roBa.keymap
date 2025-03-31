@@ -91,10 +91,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E          &kp R        &kp T                                               &kp Y           &kp U        &kp I        &kp O         &kp P
-&kp A             &lt 7 S       &mt LSHFT D    &mt LCTRL F  &mt LEFT_ALT G  &kp PAGE_UP        &leftclick       &mt LEFT_ALT H  &mt LCTRL J  &mt LSHFT K  &lt 5 L       &kp MINUS
-&lt 3 Z           &kp X         &kp C          &kp V        &mt LEFT_WIN B  &kp PAGE_DOWN      &rightclick      &mt LEFT_WIN N  &kp M        &kp COMMA    &lt 2 PERIOD  &lt 3 SLASH
-&kp LEFT_CONTROL  &lt 6 LSHIFT  &kp BACKSPACE  &lt 7 ENTER  &lt 1 SPACE     &lt 2 TAB          &lt 1 BACKSPACE  &mo 7                                                   &kp BACKSPACE
+&kp Q                      &kp W         &kp E          &kp R        &kp T                                               &kp Y           &kp U        &kp I        &kp O         &kp P
+&kp A                      &kp S         &mt LSHFT D    &mt LCTRL F  &mt LEFT_ALT G  &kp PAGE_UP        &leftclick       &mt LEFT_ALT H  &mt LCTRL J  &mt LSHFT K  &lt 5 L       &kp MINUS
+&lt 3 Z                    &kp X         &kp C          &kp V        &kp B           &kp PAGE_DOWN      &rightclick      &kp N           &kp M        &kp COMMA    &lt 5 PERIOD  &lt 3 SLASH
+&mt LEFT_WIN LEFT_CONTROL  &lt 6 LSHIFT  &kp BACKSPACE  &lt 7 ENTER  &lt 1 SPACE     &lt 2 TAB          &lt 1 BACKSPACE  &mo 7                                                   &kp ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -113,7 +113,7 @@
             bindings = <
 &kp C_MUTE           &kp C_VOLUME_DOWN  &kp C_VOL_UP         &kp LG(LC(V))              &none                                       &kp CARET              &kp SEMICOLON        &kp COLON      &kp AT_SIGN       &kp LEFT_BRACKET
 &kp N1               &kp NUMBER_2       &mt LSHIFT NUMBER_3  &mt LEFT_CONTROL NUMBER_4  &mt LEFT_ALT N5  &trans      &trans         &mt LEFT_ALT NUMBER_6  &mt LEFT_CONTROL N7  &mt LSHIFT N8  &kp N9            &kp N0
-&kp LA(PRINTSCREEN)  &kp LG(LS(S))      &none                &leftclick                 &rightclick      &trans      &trans         &kp LS(LC(F10))        &leftclick           &kp INT_YEN    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp LA(PRINTSCREEN)  &kp LG(LS(S))      &none                &leftclick                 &rightclick      &trans      &trans         &kp LS(LC(F10))        &none                &kp INT_YEN    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &passward1           &password2         &mail                &trans                     &trans           &trans      &kp BACKSPACE  &none                                                                        &kp LA(LSHIFT)
             >;
         };
@@ -129,10 +129,10 @@
 
         Mouse {
             bindings = <
-&none  &none  &none  &none     &none                    &none  &none     &none  &none  &none
-&none  &none  &none  &none     &none  &none      &none  &none  &mkp MB1  &none  &mo 5  &none
-&none  &none  &none  &mkp MB1  &none  &none      &none  &none  &mkp MB2  &none  &none  &none
-&none  &none  &none  &none     &none  &none      &none  &none                          &none
+&none  &none  &none  &none     &none                    &none  &none     &none     &none  &none
+&none  &none  &none  &none     &none  &none      &none  &none  &mkp MB1  &mkp MB1  &mo 5  &none
+&none  &none  &none  &mkp MB1  &none  &none      &none  &none  &mkp MB2  &none     &mo 5  &none
+&none  &none  &none  &none     &none  &none      &none  &none                             &none
             >;
         };
 
