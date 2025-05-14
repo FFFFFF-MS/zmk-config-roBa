@@ -172,10 +172,10 @@
 
         Otoge {
             bindings = <
-&kp F1     &kp F2        &kp F3          &kp F4          &kp F5                                  &kp F8          &kp F9           &kp F10         &kp F11        &kp F12
-&kp MINUS  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp UP_ARROW    &kp PAGE_UP      &kp F6       &kp F7    &kp PAGE_DOWN   &kp DOWN_ARROW   &kp LEFT_SHIFT  &kp RIGHT_ALT  &kp SEMI
-&none      &none         &none           &kp LEFT_ARROW  &kp RIGHT_ARROW  &none        &none     &kp LEFT_ARROW  &kp RIGHT_ARROW  &none           &none          &none
-&kp LSHFT  &kp LCTRL     &kp LALT        &kp ENTER       &kp SPACE        &kp ESC      &kp BSPC  &kp TAB                                                         &kp RIGHT_SHIFT
+&kp F1     &kp F2        &kp F3          &kp F4          &kp F5                                  &kp F8          &kp F9           &kp F10          &kp F11        &kp F12
+&kp MINUS  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp UP_ARROW    &kp PAGE_UP      &kp F6       &kp F7    &kp PAGE_DOWN   &kp DOWN_ARROW   &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp SEMI
+&none      &none         &none           &kp LEFT_ARROW  &kp RIGHT_ARROW  &none        &none     &kp LEFT_ARROW  &kp RIGHT_ARROW  &none            &none          &none
+&kp LSHFT  &kp LCTRL     &kp LALT        &kp ENTER       &kp SPACE        &kp ESC      &kp BSPC  &kp TAB                                                          &kp RIGHT_SHIFT
             >;
         };
     };
