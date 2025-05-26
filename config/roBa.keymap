@@ -34,6 +34,11 @@
             bindings = <&to 8>;
             key-positions = <15 16>;
         };
+
+        Leftclick {
+            bindings = <&mkp MB1>;
+            key-positions = <31 32>;
+        };
     };
 
     macros {
@@ -172,10 +177,10 @@
 
         Otoge {
             bindings = <
-&kp F1            &kp F2        &kp F3          &kp F4          &kp F5                                 &kp F8          &kp F9           &kp F10          &kp F11        &kp F12
-&kp MINUS         &kp LEFT_ALT  &kp LEFT_SHIFT  &kp UP_ARROW    &kp PAGE_UP      &kp F6       &kp F7   &kp PAGE_DOWN   &kp DOWN_ARROW   &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp SEMI
-&kp LEFT_CONTROL  &none         &none           &kp LEFT_ARROW  &kp RIGHT_ARROW  &none        &none    &kp LEFT_ARROW  &kp RIGHT_ARROW  &none            &none          &kp RIGHT_CONTROL
-&kp LSHFT         &kp LCTRL     &kp LALT        &kp ENTER       &kp SPACE        &kp ESC      &kp TAB  &kp BACKSPACE                                                    &kp RIGHT_SHIFT
+&kp F1        &kp F2            &kp F3          &kp F4        &kp F5                                   &kp F8          &kp F9          &kp F10          &kp F11            &kp F12
+&kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp UP_ARROW  &kp DOWN_ARROW   &kp F6         &kp F7   &kp UP_ARROW    &kp DOWN_ARROW  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT
+&kp LEFT_ALT  &none             &kp LEFT_ARROW  &kp PAGE_UP   &kp RIGHT_ARROW  &none          &none    &kp LEFT_ARROW  &kp PAGE_DOWN   &kp RIGHT_ARROW  &none              &kp RIGHT_ALT
+&kp ESCAPE    &none             &none           &kp ENTER     &kp SPACE        &kp SPACE      &kp TAB  &kp TAB                                                             &kp ESCAPE
             >;
         };
     };
